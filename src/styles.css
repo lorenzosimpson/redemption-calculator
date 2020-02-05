@@ -1,0 +1,117 @@
+body {
+  background-color: #f6f5f3;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.2rem;
+}
+
+.App {
+  text-align: center;
+  font-size: 16px;
+}
+
+.header {
+  text-align: left;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.airlines img {
+  width: 200px;
+  height: 200px;
+}
+
+.card {
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+form h2 {
+  background: #6d85a1;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  font-weight: 500;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin: auto;
+  width: 100%;
+}
+
+#money-h2 {
+  width: 100%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 10%;
+  width: 50%;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  margin-bottom: 30px;
+  min-width: 64px;
+  font-size: 1rem;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: white;
+  background-color: #3c7096;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    width: 88%;
+  }
+  input {
+    width: 68%;
+    font-size: inherit;
+  }
+  form {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  form h2 {
+    height: 100px;
+    margin: 0;
+  }
+}
