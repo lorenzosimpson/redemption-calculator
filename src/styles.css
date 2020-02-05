@@ -105,13 +105,13 @@ button {
     font-size: inherit;
   }
   form {
-    height: 400px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   form h2 {
-    height: 100px;
+    height: 50px;
     margin: 0;
   }
 }
