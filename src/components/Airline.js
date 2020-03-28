@@ -23,59 +23,61 @@ const Airline = props => {
 
       <div className='airlines-right'>
           <div className="card-wrapper">
-            <div
-              className="aa"
-              onClick={() => {
-                setInputs({
-                  ...inputs,
-                  multiplier: multipliers.aa
-                });
-                props.history.push("/miles");
-              }}
-            >
-              <Card>
-                <CardImg src="https://image.flaticon.com/icons/svg/806/806042.svg" />
-                <CardBody>
-                  <p className='airline-name'>American Airlines</p>
-                </CardBody>
-              </Card>
-            </div>
+              <div
+                className="aa"
+                onClick={() => {
+                  setInputs({
+                    ...inputs,
+                    multiplier: multipliers.aa
+                  });
+                  console.log(inputs)
+                  props.history.push("/miles");
+                }}
+              >
+                <Card>
+                  <CardImg src="https://image.flaticon.com/icons/svg/806/806042.svg" />
+                  <CardBody>
+                    <p className='airline-name'>American Airlines</p>
+                  </CardBody>
+                </Card>
+              </div>
+      
+              <div
+                className="ua"
+                onClick={() => {
+                  setInputs({
+                    ...inputs,
+                    multiplier: multipliers.ua
+                  });
+                  props.history.push("/miles");
+                }}
+              >
+                <Card>
+                  <CardImg src={ua} style={{width: '150px'}} />
+                  <CardBody>
+                    <p className='airline-name'>United Airlines</p>
+                  </CardBody>
+                </Card>
+              </div>
 
-            <div
-              className="ua"
-              onClick={() => {
-                setInputs({
-                  ...inputs,
-                  multiplier: multipliers.ua
-                });
-                props.history.push("/miles");
-              }}
-            >
-              <Card>
-                <CardImg src={ua} style={{width: '150px'}} />
-                <CardBody>
-                  <p className='airline-name'>United Airlines</p>
-                </CardBody>
-              </Card>
-            </div>
+              <div
+                className="dl"
+                onClick={() => {
+                  setInputs({
+                    ...inputs,
+                    multiplier: multipliers.dl
+                  });
+                  props.history.push("/miles");
+                }}
+              >
+                <Card>
+                  <CardImg src="https://image.flaticon.com/icons/svg/806/806055.svg" />
+                  <CardBody>
+                    <p className='airline-name'>Delta Airlines</p>
+                  </CardBody>
+                </Card>
+              </div>
 
-            <div
-              className="dl"
-              onClick={() => {
-                setInputs({
-                  ...inputs,
-                  multiplier: multipliers.dl
-                });
-                props.history.push("/miles");
-              }}
-            >
-              <Card>
-                <CardImg src="https://image.flaticon.com/icons/svg/806/806055.svg" />
-                <CardBody>
-                  <p className='airline-name'>Delta Airlines</p>
-                </CardBody>
-              </Card>
-            </div>
          </div>
         </div>
       </div>
