@@ -14,11 +14,11 @@ const MobileAirlines = props => {
   };
   return (
     <div className="mbl-airlines-container" id='airlines'>
-       <div className='airlines-content'>
+       <div className='mbl-airlines-content'>
           <div className='airlines-top'>
           <p id='choose'>Choose your airline</p>
             {/* <img alt='travelers' id='travelers' src={travelers}></img> */}
-            <a className='attr' id='attr-left' href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by stories - www.freepik.com</a>
+            {/* <a className='attr' id='attr-left' href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by stories - www.freepik.com</a> */}
       </div>
 
       <div className='airlines-bottom'>

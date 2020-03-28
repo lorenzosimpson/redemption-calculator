@@ -35,11 +35,14 @@ function App() {
             {matches =>
             matches.small ? (
               <>
-              <MobileHome />
-              <MobileAirlines />
+              <Route exact path='/' component={MobileHome} />
+             <Route exact path='/' component={MobileAirlines}/>
               </>
             ) : (
+              <>
              <Route exact path='/' component={Home} />
+             <Route exact path='/' component={Airline}/>
+             </>
             )
             }
         </Media>
