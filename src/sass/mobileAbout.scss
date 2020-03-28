@@ -1,0 +1,33 @@
+.mbl-about-container {
+    width: 100%;
+
+    p {
+        font-size: 1rem;
+    }
+
+    #about-header {
+        font-size: 32px;
+    }
+
+    .mbl-about-content {
+        width: 90%;
+        margin: 0 auto;
+
+        text-align: left;
+
+
+        .mbl-about-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #about-img {
+                width: 300px;
+            }
+        }
+
+        .mbl-about-bottom {
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+}

@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { MileageContext } from "../contexts/MileageContext";
 import { Card, CardImg, CardBody, p } from "reactstrap";
-import travelers from '../images/travelers.jpg';
 import ua from '../images/ua.png';
 
 const MobileAirlines = props => {
