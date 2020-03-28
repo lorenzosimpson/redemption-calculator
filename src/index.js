@@ -15,6 +15,8 @@ import Media from 'react-media';
 import MobileHome from './components/MobileHome.js';
 import MobileAirlines from './components/MobileAirlines';
 import MobileAbout from './components/MobileAbout';
+import MobileMiles from './components/MobileMiles';
+import MobileMoney from './components/MobileMoney';
 
 function App() {
   const [inputs, setInputs] = useState({});
@@ -39,22 +41,22 @@ function App() {
               <Route exact path='/' component={MobileHome} />
              <Route exact path='/' component={MobileAirlines}/>
              <Route exact path='/about' component={MobileAbout} />
+             <Route exact path='/miles' component={MobileMiles} />
+             <Route exact path='/money' component={MobileMoney} />
               </>
             ) : (
               <>
              <Route exact path='/' component={Home} />
              <Route exact path='/' component={Airline}/>
              <Route exact path='/about' component={About} />
+             <Route exact path="/miles" component={Miles} />
+            <Route exact path="/money" component={Money} />
+            <Route exact path="/result" component={Result} />
              </>
             )
             }
         </Media>
         
-        {/* <Route exact path="/" component={Airline} /> */}
-        {/* <Route exact path='/about' component={About} /> */}
-        <Route exact path="/miles" component={Miles} />
-        <Route exact path="/money" component={Money} />
-        <Route exact path="/result" component={Result} />
         </div>
       </div>
     </MileageContext.Provider>
