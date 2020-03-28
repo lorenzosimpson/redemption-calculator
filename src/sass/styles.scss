@@ -27,6 +27,7 @@ a {
 @import 'mobileMiles.scss';
 @import 'mobileMoney.scss';
 @import 'mblResult.scss';
+@import 'mobileNav.scss';
 
 .App {
   font-size: 16px;
@@ -84,6 +85,10 @@ form {
   width: 80%;
   display: flex;
   height: 100vh;
+
+  .form-title {
+    text-align: left;
+  }
 }
 
 .money-right {

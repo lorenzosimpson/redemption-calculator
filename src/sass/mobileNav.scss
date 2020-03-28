@@ -1,0 +1,29 @@
+.mbl-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        cursor: default;
+    }
+}
+
+
+.nav-open {
+    background-color: rgb(17, 69, 99);
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .mobile-nav-op {
+        font-size: 44px;
+        color: white;
+        font-weight: bold;
+        text-transform: lowercase;
+        margin: 0 0 20px;
+    }
+}

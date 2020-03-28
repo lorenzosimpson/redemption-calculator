@@ -11,7 +11,7 @@ const Header = props => {
       >
         redemption<span style={{fontWeight: 'bold'}}>Calculator</span>
       </p>
-      <Link to='/about'>About</Link>
+      <Link to='/about'>about</Link>
     </div>
   );
 };

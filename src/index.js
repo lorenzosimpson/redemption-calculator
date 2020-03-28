@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { MileageContext } from "./contexts/MileageContext";
-import { BrowserRouter, Route } from "react-router-dom";
+import { NavContext } from './contexts/NavContext';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Miles from "./components/Miles";
 import Airline from "./components/Airline";
@@ -17,10 +18,12 @@ import MobileAirlines from './components/MobileAirlines';
 import MobileAbout from './components/MobileAbout';
 import MobileMiles from './components/MobileMiles';
 import MobileMoney from './components/MobileMoney';
-import MobileResult from './components/MobileResult'
+import MobileResult from './components/MobileResult';
+import MobileNav from './components/MobileNav';
 
 function App() {
   const [inputs, setInputs] = useState({});
+  const [open, setOpen] = useState(true)
 
   function handleChange(e) {
     setInputs({
@@ -32,22 +35,38 @@ function App() {
 
   return (
     <MileageContext.Provider value={{ inputs, setInputs, handleChange }}>
+      <NavContext.Provider value={{ open, setOpen }}>
+      
       <div className="App">
-      <Route path="/" component={Header} />
+      {
         <div className='main-container'>
-          <Media queries={{ small: { maxWidth: 500 }}}>
+          <Media queries={{ small: { maxWidth: 800 }}}>
             {matches =>
-            matches.small ? (
+            matches.small && open ?
+            <>
+            <Route path='/' component={MobileNav} />
+                <div className='nav-open'>
+                  <Link className='mobile-nav-op'>Home</Link>
+                  <Link className='mobile-nav-op'>About</Link>
+                  <Link className='mobile-nav-op'>Start</Link>
+                </div>
+                </>
+              :
+              matches.small ?
+              (
               <>
+              <Route path='/' component={MobileNav} />
               <Route exact path='/' component={MobileHome} />
              <Route exact path='/' component={MobileAirlines}/>
              <Route exact path='/about' component={MobileAbout} />
              <Route exact path='/miles' component={MobileMiles} />
              <Route exact path='/money' component={MobileMoney} />
              <Route exact path='/result' component={MobileResult} />
+                )
               </>
             ) : (
               <>
+              <Route path="/" component={Header} />
              <Route exact path='/' component={Home} />
              <Route exact path='/' component={Airline}/>
              <Route exact path='/about' component={About} />
@@ -60,15 +79,17 @@ function App() {
         </Media>
         
         </div>
+}
       </div>
+      </NavContext.Provider>
     </MileageContext.Provider>
   );
 }
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <BrowserRouter>
+  <Router>
     <App />
-  </BrowserRouter>,
+  </Router>,
   rootElement
 );
