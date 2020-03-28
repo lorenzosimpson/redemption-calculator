@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { MileageContext } from "../contexts/MileageContext";
-import { Card, CardImg, CardBody, CardTitle } from "reactstrap";
+import { Card, CardImg, CardBody, p } from "reactstrap";
+import travelers from '../images/travelers.jpg';
+import ua from '../images/ua.png';
 
 const Airline = props => {
   const { inputs, setInputs } = useContext(MileageContext);
@@ -11,67 +13,77 @@ const Airline = props => {
     dl: 1.2
   };
   return (
-    <div className="airlines" id='airlines'>
-      <p id='choose'>Choose your airline</p>
-      <div className="card-wrapper">
-        <div
-          className="aa"
-          onClick={() => {
-            setInputs({
-              ...inputs,
-              multiplier: multipliers.aa
-            });
-            props.history.push("/miles");
-          }}
-        >
-          <Card>
-            <CardImg src="https://image.flaticon.com/icons/svg/806/806042.svg" />
-            <CardBody>
-              <CardTitle>American Airlines</CardTitle>
-            </CardBody>
-          </Card>
-        </div>
+    <div className="airlines-container" id='airlines'>
+       <div className='airlines-content'>
+          <div className='airlines-left'>
+          <p id='choose'>Choose your airline</p>
+            <img id='travelers' src={travelers}></img>
+            <a className='attr' id='attr-left' href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by stories - www.freepik.com</a>
+      </div>
 
-        <div
-          className="ua"
-          onClick={() => {
-            setInputs({
-              ...inputs,
-              multiplier: multipliers.ua
-            });
-            props.history.push("/miles");
-          }}
-        >
-          <Card>
-            <CardImg src="https://www.freepnglogos.com/uploads/united-airlines-logo-emblem-png-5.png" />
-            <CardBody>
-              <CardTitle>United Airlines</CardTitle>
-            </CardBody>
-          </Card>
-        </div>
+      <div className='airlines-right'>
+          <div className="card-wrapper">
+            <div
+              className="aa"
+              onClick={() => {
+                setInputs({
+                  ...inputs,
+                  multiplier: multipliers.aa
+                });
+                props.history.push("/miles");
+              }}
+            >
+              <Card>
+                <CardImg src="https://image.flaticon.com/icons/svg/806/806042.svg" />
+                <CardBody>
+                  <p className='airline-name'>American Airlines</p>
+                </CardBody>
+              </Card>
+            </div>
 
-        <div
-          className="dl"
-          onClick={() => {
-            setInputs({
-              ...inputs,
-              multiplier: multipliers.dl
-            });
-            props.history.push("/miles");
-          }}
-        >
-          <Card>
-            <CardImg src="https://image.flaticon.com/icons/svg/806/806055.svg" />
-            <CardBody>
-              <CardTitle>Delta Airlines</CardTitle>
-            </CardBody>
-          </Card>
+            <div
+              className="ua"
+              onClick={() => {
+                setInputs({
+                  ...inputs,
+                  multiplier: multipliers.ua
+                });
+                props.history.push("/miles");
+              }}
+            >
+              <Card>
+                <CardImg src={ua} style={{width: '150px'}} />
+                <CardBody>
+                  <p className='airline-name'>United Airlines</p>
+                </CardBody>
+              </Card>
+            </div>
+
+            <div
+              className="dl"
+              onClick={() => {
+                setInputs({
+                  ...inputs,
+                  multiplier: multipliers.dl
+                });
+                props.history.push("/miles");
+              }}
+            >
+              <Card>
+                <CardImg src="https://image.flaticon.com/icons/svg/806/806055.svg" />
+                <CardBody>
+                  <p className='airline-name'>Delta Airlines</p>
+                </CardBody>
+              </Card>
+            </div>
+         </div>
         </div>
       </div>
-      <img id='airline-img'></img>
     </div>
 
   );
 };
+
+// <a href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by stories - www.freepik.com</a>
 
 export default Airline;

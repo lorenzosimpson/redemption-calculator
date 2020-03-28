@@ -13,7 +13,7 @@ function Home(props) {
                 </div>
             </div>
             <div className='right'>
-                <img id='woman' alt='woman carrying suitcase' 
+                <img id='people' alt='people holding ticket sign' 
                 src={woman}></img>    
                 <a className='attr' href="https://www.vecteezy.com/free-vector/flight-attendant">Flight Attendant Vectors by Vecteezy</a>
             </div>      

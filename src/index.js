@@ -27,11 +27,12 @@ function App() {
       <Route path="/" component={Header} />
         <div className='main-container'>
         <Route exact path='/' component={Home} />
-        </div>
+        
         <Route exact path="/" component={Airline} />
         <Route exact path="/miles" component={Miles} />
         <Route exact path="/money" component={Money} />
         <Route exact path="/result" component={Result} />
+        </div>
       </div>
     </MileageContext.Provider>
   );
