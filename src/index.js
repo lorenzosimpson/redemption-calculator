@@ -7,8 +7,13 @@ import Miles from "./components/Miles";
 import Airline from "./components/Airline";
 import Money from "./components/Money";
 import Result from "./components/Result";
-import "./styles.css";
+import About from './components/About';
+import "./sass/styles.scss";
 import Home from './components/Home'
+import Media from 'react-media';
+
+import MobileHome from './components/MobileHome.js';
+import MobileAirlines from './components/MobileAirlines';
 
 function App() {
   const [inputs, setInputs] = useState({});
@@ -26,9 +31,21 @@ function App() {
       <div className="App">
       <Route path="/" component={Header} />
         <div className='main-container'>
-        <Route exact path='/' component={Home} />
+          <Media queries={{ small: { maxWidth: 500 }}}>
+            {matches =>
+            matches.small ? (
+              <>
+              <MobileHome />
+              <MobileAirlines />
+              </>
+            ) : (
+             <Route exact path='/' component={Home} />
+            )
+            }
+        </Media>
         
-        <Route exact path="/" component={Airline} />
+        {/* <Route exact path="/" component={Airline} /> */}
+        <Route exact path='/about' component={About} />
         <Route exact path="/miles" component={Miles} />
         <Route exact path="/money" component={Money} />
         <Route exact path="/result" component={Result} />

@@ -26,7 +26,7 @@ const Money = props => {
           </button>
         </form>
         <div className='money-right'>
-          <img id='money-img' src={money}></img>
+          <img alt='money' id='money-img' src={money}></img>
           <a className='attr' href="https://www.freepik.com/free-photos-vectors/money">Money vector created by stories - www.freepik.com</a>
         </div>
       </div>

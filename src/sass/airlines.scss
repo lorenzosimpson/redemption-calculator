@@ -1,0 +1,73 @@
+
+/* airlines section  */
+.airlines-container {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .airlines-content {
+    display: flex;
+    width: 100%;
+  }
+  
+  .airlines-left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 400px;
+    text-align: left;
+  }
+  #choose {
+    font-size: 44px;
+    font-weight: 700;
+  }
+  
+  #travelers {
+    width: 400px;
+    height: 400px;
+    padding-top: 8%;
+  }
+  
+  .card-img {
+    transition: 0.5s;
+  }
+  
+  .card-img:hover {
+    width: 200px;
+  }
+  
+  #ua-img {
+    width: 150px;
+  }
+  
+  #ua-img:hover {
+    width: 300px;
+  }
+  
+  .airline-name {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  .card-img {
+    width: 100px;
+  }
+  .airlines-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55%;
+  }
+  .airlines img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card {
+    margin: 20px;
+  }
+  

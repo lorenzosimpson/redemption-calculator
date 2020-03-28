@@ -1,0 +1,61 @@
+@media screen and (max-width: 500px) {
+    button {
+      width: 88%;
+    }
+    input {
+      width: 68%;
+      font-size: inherit;
+    }
+    form {
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    form h2 {
+      height: 50px;
+      margin: 0;
+    }
+
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+
+
+        .home-container {
+            flex-direction: column;
+            padding: 0;
+
+            .left {
+                width: 100%;
+                padding: 0;
+
+                .banner-text {
+                   width: 100%;
+
+                   a {
+                       width: 100%;
+                   }
+
+                   button {
+                       width: 100%;
+                   }
+
+                    #tagline {
+                        font-size: 35px;
+                    }
+                }
+            }
+            .right {
+                padding: 0;
+                
+                #people {
+                    width: 100px;
+                }
+            }
+        }
+
+   
+    }
+  }
+  

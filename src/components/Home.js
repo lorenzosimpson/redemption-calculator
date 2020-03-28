@@ -1,11 +1,13 @@
 import React from 'react';
-const woman = require('../images/people.jpg')
+import woman from '../images/people.jpg';
+
+
 function Home(props) {
     return (
         <div className='home-container'>
             <div className='left'>
                 <div className='banner-text'>
-                    <p id='tagline'>Miles or money
+                    <p id='tagline'><span className='title-emp'>Miles</span> or <span className='title-emp'>money </span> 
                    for that ticket?
                     </p>
                     <p id='let-us-help'>We'll help you choose.</p>

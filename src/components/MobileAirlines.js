@@ -4,7 +4,7 @@ import { Card, CardImg, CardBody, p } from "reactstrap";
 import travelers from '../images/travelers.jpg';
 import ua from '../images/ua.png';
 
-const Airline = props => {
+const MobileAirlines = props => {
   const { inputs, setInputs } = useContext(MileageContext);
 
   const multipliers = {
@@ -13,15 +13,15 @@ const Airline = props => {
     dl: 1.2
   };
   return (
-    <div className="airlines-container" id='airlines'>
+    <div className="mbl-airlines-container" id='airlines'>
        <div className='airlines-content'>
-          <div className='airlines-left'>
+          <div className='airlines-top'>
           <p id='choose'>Choose your airline</p>
-            <img alt='travelers' id='travelers' src={travelers}></img>
+            {/* <img alt='travelers' id='travelers' src={travelers}></img> */}
             <a className='attr' id='attr-left' href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by stories - www.freepik.com</a>
       </div>
 
-      <div className='airlines-right'>
+      <div className='airlines-bottom'>
           <div className="card-wrapper">
               <div
                 className="aa"
@@ -88,4 +88,4 @@ const Airline = props => {
 
 // <a href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by stories - www.freepik.com</a>
 
-export default Airline;
+export default MobileAirlines;

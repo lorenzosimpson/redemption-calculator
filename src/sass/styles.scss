@@ -16,15 +16,16 @@ a {
   color: inherit;
 }
 
+@import 'home.scss';
+@import 'airlines.scss';
+@import 'about.scss';
+@import 'header.scss';
+@import 'queries.scss';
+@import 'mobileHome.scss';
+
 .App {
   font-size: 16px;
   text-align: center;
-}
-
-.header {
-  text-align: left;
-  margin-left: 20px;
-  cursor: pointer;
 }
 
 .main-container {
@@ -34,42 +35,6 @@ a {
   align-items: center;
 }
 
-.home-container {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-  height: 100vh;
-}
-
-.left {
-  width: 40%;
-}
-
-.banner-text {
-  width: 70%;
-  margin-top: 10%;
-  text-align: left;
-}
-
-#tagline {
-  font-weight: 700;
-  font-size: 48px;
-}
-
-#let-us-help {
-  font-size: 28px;
-}
-
-.right {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-#people {
-  width: 600px;
-}
 
 .attr {
   text-decoration: none;
@@ -79,64 +44,6 @@ a {
 
 #attr-left {
   text-align: left;
-}
-
-/* airlines section  */
-.airlines-container {
-  height: 100vh;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-}
-
-.airlines-content {
-  display: flex;
-  width: 100%;
-}
-
-.airlines-left {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  min-width: 400px;
-}
-#choose {
-  font-size: 44px;
-  font-weight: 700;
-}
-
-#travelers {
-  width: 400px;
-  height: 400px;
-}
-
-.ua, .aa, .dl {
-
-}
-
-.airline-name {
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.card-img {
-  width: 100px;
-}
-.airlines-right {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 55%;
-}
-.airlines img {
-  width: 100px;
-  height: 100px;
-}
-
-.card {
-  margin: 20px;
 }
 
 .form-container {
@@ -232,22 +139,3 @@ button {
   transition: box-shadow 0.2s;
 }
 
-@media screen and (max-width: 500px) {
-  button {
-    width: 88%;
-  }
-  input {
-    width: 68%;
-    font-size: inherit;
-  }
-  form {
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  form h2 {
-    height: 50px;
-    margin: 0;
-  }
-}

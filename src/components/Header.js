@@ -1,15 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = props => {
   return (
     <div className="header">
-      <h1
+      <p id='logo'
         onClick={() => {
           props.history.push("/");
         }}
       >
-        rC
-      </h1>
+        redemption<span style={{fontWeight: 'bold'}}>Calculator</span>
+      </p>
+      <Link to='/about'>About</Link>
     </div>
   );
 };

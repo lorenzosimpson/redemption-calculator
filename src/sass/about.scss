@@ -1,0 +1,34 @@
+.about-container {
+    width: 80%;
+  }
+  
+  .about-content {
+    display: flex;
+  }
+  
+  .about-left {
+    width: 35%;
+    text-align: left;
+    padding-right: 10%;
+  }
+  
+  .about-right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #about-header {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  
+  .step-title {
+    font-weight: bold;
+    font-size: 28px;
+  }
+  
+  .step-desc {
+    font-size: 14px;
+    color: grey;
+  }

@@ -14,7 +14,7 @@ const Result = props => {
         <div className='result-sub'>
         <p id='result-text'>Whoops! You forgot to complete each section</p>
         <h2>Please try again</h2>
-        <img src={error} width='600px'></img>
+        <img alt='error' src={error} width='600px'></img>
         <a className='attr' href="http://www.freepik.com">Designed by slidesgo / Freepik</a>
         </div>
       ) : (
@@ -23,13 +23,13 @@ const Result = props => {
             ? 
             <div className='result-sub'>
             <p id='result-text'>Use miles</p>
-              <img src={woman} width='450px'></img>
+              <img src={woman} width='450px' alt='woman'></img>
               <a className='attr' href="https://www.vecteezy.com/free-vector/woman">Woman Vectors by Vecteezy</a>
               </div>
             : 
             <div className='result-sub'>
             <p id='result-text'>Use money</p>
-            <img src={money2} width='600px'></img>
+            <img alt='money' src={money2} width='600px'></img>
             <a className='attr' href="https://www.vecteezy.com/free-vector/accounting">Accounting Vectors by Vecteezy</a>
             </div>
             }
