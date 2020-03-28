@@ -9,9 +9,14 @@ const Money = props => {
     setTimeout(() => props.history.push("/result"), 2000)
   }
   return (
-    <div className='money-container'>
+    <div className='mbl-money-container'>
+        <div className='money-top'>
+        <h2 className='form-title'>How much is the ticket in cash?</h2>
+          <img alt='money' id='money-img' src={money}></img>
+          <a className='attr' href="https://www.freepik.com/free-photos-vectors/money">Money vector created by stories - www.freepik.com</a>
+        </div>
+
         <form className="form-money" onChange={handleChange}>
-          <h2 className='form-title'>How much is the ticket in cash?</h2>
           <input name="money" type="number" />
           <button
             color="primary"
@@ -25,10 +30,6 @@ const Money = props => {
           {!clicked ? 'calculate' : 'calculating...'}
           </button>
         </form>
-        <div className='money-right'>
-          <img alt='money' id='money-img' src={money}></img>
-          <a className='attr' href="https://www.freepik.com/free-photos-vectors/money">Money vector created by stories - www.freepik.com</a>
-        </div>
       </div>
   );
 };

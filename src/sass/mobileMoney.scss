@@ -1,0 +1,28 @@
+.mbl-money-container {
+    width: 80%;
+
+    .form-title {
+        text-align: center;
+    }
+
+    .money-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+        justify-content: flex-start;
+        input {
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+        }
+    }
+
+    #money-img {
+        margin: 0 auto;
+        width: 60%;
+    }
+}

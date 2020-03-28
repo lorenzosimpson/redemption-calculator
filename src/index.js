@@ -17,6 +17,7 @@ import MobileAirlines from './components/MobileAirlines';
 import MobileAbout from './components/MobileAbout';
 import MobileMiles from './components/MobileMiles';
 import MobileMoney from './components/MobileMoney';
+import MobileResult from './components/MobileResult'
 
 function App() {
   const [inputs, setInputs] = useState({});
@@ -43,6 +44,7 @@ function App() {
              <Route exact path='/about' component={MobileAbout} />
              <Route exact path='/miles' component={MobileMiles} />
              <Route exact path='/money' component={MobileMoney} />
+             <Route exact path='/result' component={MobileResult} />
               </>
             ) : (
               <>
