@@ -23,7 +23,7 @@ import MobileNav from './components/MobileNav';
 
 function App() {
   const [inputs, setInputs] = useState({});
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   function handleChange(e) {
     setInputs({
@@ -45,10 +45,10 @@ function App() {
             matches.small && open ?
             <>
             <Route path='/' component={MobileNav} />
-                <div className='nav-open'>
-                  <Link className='mobile-nav-op'>Home</Link>
-                  <Link className='mobile-nav-op'>About</Link>
-                  <Link className='mobile-nav-op'>Start</Link>
+                <div className='nav-open' onClick={() => setOpen(false)}>
+                  <Link className='mobile-nav-op' to='/'>Home</Link>
+                  <Link className='mobile-nav-op' to='/about'>About</Link>
+                  <a className='mobile-nav-op' href='/#airlines'>Start</a>
                 </div>
                 </>
               :
@@ -62,7 +62,7 @@ function App() {
              <Route exact path='/miles' component={MobileMiles} />
              <Route exact path='/money' component={MobileMoney} />
              <Route exact path='/result' component={MobileResult} />
-                )
+                
               </>
             ) : (
               <>
