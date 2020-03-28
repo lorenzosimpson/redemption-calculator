@@ -12,7 +12,7 @@ const MobileMiles = props => {
         <a className='attr' href="https://www.freepik.com/free-photos-vectors/cartoon">Cartoon vector created by brgfx - www.freepik.com</a>
       </div>
       <form className="form-miles" onChange={handleChange}>
-        <input type="number" name="miles"/>
+        <input type="tel" name="miles"/>
         <button
           onClick={e => {
             e.preventDefault();

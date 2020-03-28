@@ -17,7 +17,7 @@ const Money = props => {
         </div>
 
         <form className="form-money" onChange={handleChange}>
-          <input name="money" type="number" />
+          <input name="money" type="tel" />
           <button
             color="primary"
             onClick={e => {
