@@ -8,7 +8,7 @@ const Header = props => {
           props.history.push("/");
         }}
       >
-        Miles or Money?
+        rC
       </h1>
     </div>
   );

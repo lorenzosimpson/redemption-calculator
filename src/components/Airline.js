@@ -11,8 +11,8 @@ const Airline = props => {
     dl: 1.2
   };
   return (
-    <div className="airlines">
-      <h4>Choose your airline</h4>
+    <div className="airlines" id='airlines'>
+      <p id='choose'>Choose your airline</p>
       <div className="card-wrapper">
         <div
           className="aa"
@@ -68,7 +68,9 @@ const Airline = props => {
           </Card>
         </div>
       </div>
+      <img id='airline-img'></img>
     </div>
+
   );
 };
 

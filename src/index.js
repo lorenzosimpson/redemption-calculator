@@ -8,6 +8,7 @@ import Airline from "./components/Airline";
 import Money from "./components/Money";
 import Result from "./components/Result";
 import "./styles.css";
+import Home from './components/Home'
 
 function App() {
   const [inputs, setInputs] = useState({});
@@ -23,7 +24,10 @@ function App() {
   return (
     <MileageContext.Provider value={{ inputs, setInputs, handleChange }}>
       <div className="App">
-        <Route path="/" component={Header} />
+      <Route path="/" component={Header} />
+        <div className='main-container'>
+        <Route exact path='/' component={Home} />
+        </div>
         <Route exact path="/" component={Airline} />
         <Route exact path="/miles" component={Miles} />
         <Route exact path="/money" component={Money} />
