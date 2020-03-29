@@ -1,13 +1,22 @@
-.mbl-airlines-content {
-    .card-img {
-        width: 50px;
+.mbl-airlines-container {
+    height: 100vh;
+    
+    .mbl-airlines-content {
+        .card-img {
+            width: 50px;
+        }
+    
+        #choose {
+            font-size: 32px;
+        }
+    
+        p {
+            font-size: 24px;
+        }
+    
+        #ua-img {
+            width: 85px;
+        }
     }
 
-    p {
-        font-size: 24px;
-    }
-
-    #ua-img {
-        width: 85px;
-    }
 }

@@ -1,5 +1,6 @@
 .mbl-home-container {
     width: 80%;
+    height: 100vh;
 
     .banner-text {
         margin: 0;
@@ -26,6 +27,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
     }
 
