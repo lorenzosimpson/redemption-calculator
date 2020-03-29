@@ -1,8 +1,14 @@
 .mbl-header {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+
+    .mbl-nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
 
     span {
         cursor: default;

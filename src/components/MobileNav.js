@@ -6,19 +6,21 @@ function MobileNav(props) {
 
     return (
         <div className="mbl-header">
-            <p id='logo'
-                onClick={() => {
-                setOpen(false)
-                props.history.push("/");
-                }}
-            >
-                redemption<span style={{fontWeight: 'bold'}}>Calculator</span>
-            </p>
-            <span class="material-icons"
-                onClick={() => setOpen(!open)}
-            >
-                menu
-            </span>
+            <div className='mbl-nav-items'>
+                <p id='logo'
+                    onClick={() => {
+                    setOpen(false)
+                    props.history.push("/");
+                    }}
+                >
+                    redemption<span style={{fontWeight: 'bold'}}>Calculator</span>
+                </p>
+                <span class="material-icons"
+                    onClick={() => setOpen(!open)}
+                >
+                    menu
+                </span>
+            </div>
         </div>
 
     );
