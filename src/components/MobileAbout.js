@@ -1,5 +1,5 @@
 import React from 'react';
-import booking from '../images/bookingflights.svg'
+import about from '../images/about.svg'
 
 function MobileAbout(props) {
     return (
@@ -7,8 +7,7 @@ function MobileAbout(props) {
             <p id='about-header'>How it works</p>
             <div className='mbl-about-content'>
             <div className='mbl-about-top'>
-                <img id='about-img' src={booking} width='600' alt='people booking travel'></img>
-                <a className='attr' href="https://www.vecteezy.com/free-vector/flight-attendant">Flight Attendant Vectors by Vecteezy</a>
+                <img id='about-img' src={about} width='600' alt='website'></img>
             </div>
             <div className='mbl-about-bottom'>
                 <div className='step'>

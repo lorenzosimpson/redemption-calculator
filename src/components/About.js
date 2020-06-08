@@ -1,5 +1,5 @@
 import React from 'react';
-import booking from '../images/bookingflights.svg'
+import about from '../images/about.svg'
 
 function About(props) {
     return (
@@ -30,8 +30,8 @@ function About(props) {
             </div>
 
             <div className='about-right'>
-                <img src={booking} width='600' alt='people booking travel'></img>
-                <a className='attr' href="https://www.vecteezy.com/free-vector/flight-attendant">Flight Attendant Vectors by Vecteezy</a>
+                <img src={about} width='600' alt='website'></img>
+               
             </div>
             </div>
         </div>
