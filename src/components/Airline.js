@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { MileageContext } from "../contexts/MileageContext";
 import { Card, CardImg, CardBody, p } from "reactstrap";
-import travelers from '../images/travelers.jpg';
+import travelers from '../images/travelers.svg';
 import ua from '../images/ua.png';
 
 const Airline = props => {
@@ -18,7 +18,6 @@ const Airline = props => {
           <div className='airlines-left'>
           <p id='choose'>Choose your airline</p>
             <img alt='travelers' id='travelers' src={travelers}></img>
-            <a className='attr' id='attr-left' href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by stories - www.freepik.com</a>
       </div>
 
       <div className='airlines-right'>

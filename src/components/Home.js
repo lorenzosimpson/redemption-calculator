@@ -1,5 +1,5 @@
 import React from 'react';
-import woman from '../images/people.jpg';
+import home from '../images/home.svg';
 
 
 function Home(props) {
@@ -15,9 +15,8 @@ function Home(props) {
                 </div>
             </div>
             <div className='right'>
-                <img id='people' alt='people holding ticket sign' 
-                src={woman}></img>    
-                <a className='attr' href="https://www.vecteezy.com/free-vector/flight-attendant">Flight Attendant Vectors by Vecteezy</a>
+                <img id='home-img' alt='woman looking at travel site' 
+                src={home}></img> 
             </div>      
             
         </div>

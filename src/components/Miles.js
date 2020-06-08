@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
 import { MileageContext } from "../contexts/MileageContext";
-import plane from '../images/plane.jpg'
+import miles from '../images/miles.svg'
 
 const Miles = props => {
   const { handleChange } = useContext(MileageContext);
   return (
     <div className='form-container'>
       <div className='miles-left'>
-      <img alt='airplane' id='miles-img' src={plane}></img>
-        <a className='attr' href="https://www.freepik.com/free-photos-vectors/cartoon">Cartoon vector created by brgfx - www.freepik.com</a>
+      <img alt='traveler sitting on suitcase' id='miles-img' src={miles}></img>
       </div>
       <form className="form-miles" onChange={handleChange}>
       <p className='form-title'>How many miles will you need for this ticket?</p>

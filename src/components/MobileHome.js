@@ -1,5 +1,5 @@
 import React from 'react';
-import people from '../images/people.jpg';
+import home from '../images/home.svg';
 
 function MobileHome(props) {
     return (
@@ -11,9 +11,9 @@ function MobileHome(props) {
                     </p>
 
                     <div className='bottom'>
-                <img id='people' alt='people holding ticket sign' 
-                src={people}></img>    
-                <a className='attr' href="https://www.vecteezy.com/free-vector/flight-attendant">Flight Attendant Vectors by Vecteezy</a>
+                <img id='home-img' alt='people holding ticket sign' 
+                src={home}></img>    
+               
             </div>
             
                     <p id='let-us-help'>We'll help you choose.</p>

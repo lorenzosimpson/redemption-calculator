@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { MileageContext } from "../contexts/MileageContext";
 import { fn } from "../utils";
-import error from '../images/error.jpg';
-import money2 from '../images/money2.jpg';
-import woman from '../images/woman.svg';
+import error from '../images/error.svg';
+import money2 from '../images/money2.svg';
+import world from '../images/world.svg';
 
 const Result = props => {
   const { inputs } = useContext(MileageContext);
@@ -14,8 +14,7 @@ const Result = props => {
         <div className='result-sub'>
         <p id='result-text'>Whoops! You forgot to complete each section</p>
         <h2>Please try again</h2>
-        <img alt='error' src={error} width='600px'></img>
-        <a className='attr' href="http://www.freepik.com">Designed by slidesgo / Freepik</a>
+        <img alt='woman looking at blank canvas' src={error} width='600px'></img>
         </div>
       ) : (
         <div>
@@ -23,14 +22,12 @@ const Result = props => {
             ? 
             <div className='result-sub'>
             <p id='result-text'>Use miles</p>
-              <img src={woman} width='450px' alt='woman'></img>
-              <a className='attr' href="https://www.vecteezy.com/free-vector/woman">Woman Vectors by Vecteezy</a>
+              <img src={world} width='450px' alt='man looking at world map'></img>
               </div>
             : 
             <div className='result-sub'>
             <p id='result-text'>Use money</p>
             <img alt='money' src={money2} width='600px'></img>
-            <a className='attr' href="https://www.vecteezy.com/free-vector/accounting">Accounting Vectors by Vecteezy</a>
             </div>
             }
             <p>...and have a great trip!</p>

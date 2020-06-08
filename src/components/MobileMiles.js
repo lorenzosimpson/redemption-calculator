@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MileageContext } from "../contexts/MileageContext";
-import plane from '../images/plane.jpg'
+import miles from '../images/miles.svg'
 
 const MobileMiles = props => {
   const { handleChange } = useContext(MileageContext);
@@ -8,8 +8,7 @@ const MobileMiles = props => {
     <div className='mbl-form-container'>
       <div className='miles-top'>
       <p className='form-title'>How many miles will you need for this ticket?</p>
-      <img alt='airplane' id='miles-img' src={plane}></img>
-        <a className='attr' href="https://www.freepik.com/free-photos-vectors/cartoon">Cartoon vector created by brgfx - www.freepik.com</a>
+      <img alt='airplane' id='miles-img' src={miles}></img>
       </div>
       <form className="form-miles" onChange={handleChange}>
         <input type="tel" name="miles"/>
