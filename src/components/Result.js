@@ -27,7 +27,7 @@ const Result = props => {
             : 
             <div className='result-sub'>
             <p id='result-text'>Use money</p>
-            <img alt='money' src={money2} width='600px'></img>
+            <img alt='man with credit card' src={money2} width='600px'></img>
             </div>
             }
             <p>...and have a great trip!</p>
