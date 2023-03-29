@@ -29,7 +29,7 @@ const Airline = props => {
                     ...inputs,
                     multiplier: multipliers.aa
                   });
-                  console.log(inputs)
+                
                   props.history.push("/miles");
                 }}
               >
