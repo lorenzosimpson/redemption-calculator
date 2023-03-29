@@ -8,9 +8,9 @@ const Airline = props => {
   const { inputs, setInputs } = useContext(MileageContext);
 
   const multipliers = {
-    aa: 1.4,
-    ua: 1.3,
-    dl: 1.2
+    aa: 1.77,
+    ua: 1.21,
+    dl: 1.41
   };
   return (
     <div className="airlines-container" id='airlines'>
